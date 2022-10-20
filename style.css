@@ -24,7 +24,8 @@ main{
 	align-items: center;
 	justify-content: space-around;
 	background-color: 	#45b8fa;
-	width: 100vw;
+	width: 100%;
+
 }
 
 .headerPrincipal-nav{
@@ -42,6 +43,7 @@ main{
 
 h1{
 	color: white;
+	text-shadow: 1px 1px 2px black;
 }
 
 h2 {
@@ -52,13 +54,25 @@ h2 {
 	text-decoration: none;
 	color: white;
 	font-size: 20px;
+	text-shadow: 1px 1px 2px black;
 
 }
-
-a:hover{
-	color:#83d0fc;
+.headerPrincipal-nav-link::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background-color: black;
+	display: block;
+	transition: 0.3s ease-in-out;
 }
 
+.headerPrincipal-nav-link:hover::after{
+	content: '';
+	width: 100%;
+	height: 2px;
+	background-color: white;
+	display: block;
+}
 /*Fin-Header*/
 
 
@@ -102,6 +116,8 @@ a:hover{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-wrap: wrap;
+	row-gap: 20px;
 }
 
 .redesSociales a {
@@ -418,18 +434,20 @@ a:hover{
 
 .btn-enviar{
 	width: 450px;
-	height: 25px;
+	height: 50px;
 	border-radius: 5px;
 	border: none;
 	font-family: 'Righteous', cursive;
 	font-size: 20px;
 	background-color: #45b8fa;
 	color: white;
+	border: 1px solid black;
 }
 
 .btn-enviar:hover{
 	cursor: pointer;
-	background-color:#83d0fc ;
+	background-color:#83d0fc;
+
 }
 /*Fin Contacto*/
 footer{
@@ -450,23 +468,51 @@ footer{
 
 @media (max-width: 768px){
 	.headerPrincipal .container {
-		position: relative;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-		background-image: linear-gradient(135deg, #f5f7fa 0%, white 100%);
 		width: 100vw;
 	}	
 
 	.headerPrincipal-nav{
 		display: flex;
-		align-items: center;
-		width: 50%;
+		align-items: center;;
 		justify-content: center;
 		flex-direction: column;
 	}
 	.infoPersonal{
 		flex-direction: column;
 	}
+
+	.info {
+		width: 425px;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		border-top-right-radius: none;
+		box-shadow: none;
+		border: 1px solid  black;
+		border-top: none;
+	}
+
+
+
+	.perfile-image{
+		margin-top: 200px;
+		border-bottom-left-radius: none;
+		border-bottom-right-radius: none;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		box-shadow: none;
+		border: 1px solid  black;
+		border-bottom: none ;
+	}
+
+}
+
+@media (max-width: 600px){
+	.proyectos-icon{
+		width: 400px;
+	}
+
 }
