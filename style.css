@@ -468,15 +468,12 @@ footer{
 
 @media (max-width: 768px){
 	.headerPrincipal .container {
-		display: flex;
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-		width: 100vw;
 	}	
 
 	.headerPrincipal-nav{
-		display: flex;
 		align-items: center;;
 		justify-content: center;
 		flex-direction: column;
@@ -495,8 +492,6 @@ footer{
 		border-top: none;
 	}
 
-
-
 	.perfile-image{
 		margin-top: 200px;
 		border-bottom-left-radius: none;
@@ -506,6 +501,10 @@ footer{
 		box-shadow: none;
 		border: 1px solid  black;
 		border-bottom: none ;
+	}
+
+	.hobbies{
+		flex-direction: column;
 	}
 
 }
