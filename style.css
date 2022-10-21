@@ -100,6 +100,7 @@ h2 {
 	box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
 	border: 1px solid  black;
 	border-left: none;
+	text-align: center;
 }	
 
 .info h2{
@@ -189,7 +190,6 @@ h2 {
 	width: 500px;
 	height: 15px;
 	border-radius: 35px;
-	height: 100%;
 	box-shadow: 13px 10px 10px 0px rgba(0,0,0,0.75);
 }
 
@@ -519,7 +519,7 @@ footer{
 	}
 
 	.info {
-		width: 425px;
+		width: 90%;
 		border-bottom-left-radius: 5px;
 		border-bottom-right-radius: 5px;
 		border-top-right-radius: none;
@@ -529,6 +529,7 @@ footer{
 	}
 
 	.perfile-image{
+		width: 90%;
 		margin-top: 200px;
 		border-bottom-left-radius: none;
 		border-bottom-right-radius: none;
@@ -538,16 +539,42 @@ footer{
 		border: 1px solid  black;
 		border-bottom: none ;
 	}
+	
+	.skills{
+		
+		margin:  0px;
+	}
+	.barra{
+		width: 300px;
+	}
 
 	.hobbies{
 		flex-direction: column;
 	}
 
-}
-
-@media (max-width: 600px){
+	.proyectos a{
+		width: 80%;
+	}
 	.proyectos-icon{
-		width: 400px;
+		width: 100%;
 	}
 
+	.contacto{
+		width: 90%;
+	}
+	.contacto form {
+		width: 100%;
+	}
+
+	.contacto .input {
+		width: 90%;
+	
+	}
+	.contacto textarea{
+		width: 90%;
+	}
+
+	.btn-enviar{
+		width: 90%;
+	}	
 }
