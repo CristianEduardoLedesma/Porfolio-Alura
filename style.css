@@ -436,7 +436,6 @@ h2 {
 	width: 450px;
 	height: 50px;
 	border-radius: 5px;
-	border: none;
 	font-family: 'Righteous', cursive;
 	font-size: 20px;
 	background-color: #45b8fa;
@@ -448,6 +447,43 @@ h2 {
 	cursor: pointer;
 	background-color:#83d0fc;
 
+}
+
+.mensaje{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	position: absolute;
+	width: 400px;
+	height: 150px;
+	background-color:#45b8fa ;
+	border: 1px solid black;
+	border-radius: 5px;
+	color: white;
+
+}
+
+
+.btn-mj{
+	width: 100px;
+	height: 50px;
+	border-radius: 5px;
+	font-family: 'Righteous', cursive;
+	font-size: 20px;
+	background-color: #45b8fa;
+	color: white;
+	border: 1px solid black;
+}
+
+.btn-mj:hover{
+	cursor: pointer;
+	background-color:#83d0fc;
+
+}
+.hidden {
+	display: none;
 }
 /*Fin Contacto*/
 footer{

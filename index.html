@@ -118,8 +118,12 @@
 					<input id="name" class="input" type="text" placeholder="Ingrese su nombre"required>
 					<input id="email" class="input" type="email" id="correo" placeholder="Ingrese su email" required>
 					<textarea  id="asunto" placeholder="Escriba aquí su mensaje..."required></textarea> 
-					<button class="btn-enviar" disabled >Enviar</button>  
+					<button class="btn-enviar"  onclick="validacion()">Enviar</button>  
 				</form>
+				<div class="mensaje hidden">
+					<p>Mensaje recibido, pronto me contactaré contigo!</p>
+					<button class="btn-mj">Aceptar</button>
+				</div>
 			</div>
 		</div>
 	</main>
@@ -133,5 +137,7 @@
 		</div>
 		<h3>© 2022 Copyright - Cristian Ledesma</h3>
 	</footer>
+
+	<script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
