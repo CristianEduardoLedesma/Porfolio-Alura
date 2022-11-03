@@ -142,6 +142,7 @@ h1{
 }
 
 .perfile-image{
+	margin-top: 50px;
 	margin-bottom: 5px;
 	width: 250px;
 	height: 240px;
@@ -511,6 +512,9 @@ footer{
 
 	}
 
+	.perfile-image{
+		margin-top: 0px;
+	}
 	.img-skills, .img-hobbies {
 		width: 100vw;
 	}
